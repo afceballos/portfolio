@@ -47,9 +47,9 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
+                        <TrackVisibility partialVisibility >
                         {({isVisible}) =>
-                            <div className={isVisible ? "animated__animated animated__fadeIn" : ""}>
+                            <div className={isVisible ? "animate__animated  animate__fadeIn" : "animate__animated animate__bounceOutLeft"}>
                                 <span className="tagline">Welcome to my Portfolio</span>
                                 <h1>{`Hi I'm webdecoded`}<span className="txt-rotate"><span className="wrap" > {text}</span></span></h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
